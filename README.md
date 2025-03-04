@@ -10,7 +10,7 @@ I'm working on streamlining the process so that future iterations require less e
 
 The next iteration of this tool is to create a .dmg/.exe file to develop an application with the exact same functionality.
 
-# Password Strength Analyzer - Setup & Execution Guide
+# Setup & Execution Guide
 
 ## Step 1: Clone the Repository
 To get the latest version of the project, clone the GitHub repository to your local machine.
