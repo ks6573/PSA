@@ -13,7 +13,7 @@ The next iteration of this tool is to create a .dmg/.exe file to develop an appl
 # Setup & Execution Guide
 
 ## Step 1: Clone the Repository
-To get the latest version of the project, clone the GitHub repository to your local machine.
+Clone the GitHub repository to your local machine.
 
 ```bash
 git clone https://github.com/ks6573/PSA.git
@@ -30,7 +30,7 @@ A virtual environment helps to isolate dependencies and prevent conflicts with s
 python -m venv venv
 ```
 
-To activate the virtual environment:
+To activate a virtual environment:
 - On macOS/Linux:
   ```bash
   source venv/bin/activate
@@ -60,7 +60,7 @@ This ensures that all necessary Python packages are installed.
 ---
 
 ## Step 4: Train the Machine Learning Model
-Before using the password strength checker, train the machine learning model to make predictions.
+Before using the tool, train the machine learning model to make predictions.
 
 ```bash
 python Password_Checker_Training.py
@@ -106,8 +106,8 @@ If new dependencies are added, update them with:
 pip install -r requirements.txt
 ```
 
-Now your project is fully set up and ready to use.
+Now the tool is fully set up and ready to use.
 
-If you encounter any issues, double-check the steps above or reach out for further assistance.
+If you encounter any issues, double-check any of the steps above or feel free to reach out for further assistance.
 
 
