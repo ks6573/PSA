@@ -6,7 +6,7 @@ import pandas as pd
 import os
 
 # Set the paths for model, encoder, and dataset
-data_folder = "/Users/karan/PycharmProjects/Data"
+data_folder = "../Data"
 model_path = os.path.join(data_folder, "rf_model.pkl")
 encoder_path = os.path.join(data_folder, "label_encoder.pkl")
 dataset_path = os.path.join(data_folder, "dataset.csv")
@@ -134,7 +134,7 @@ class PasswordApp(tk.Tk):
         self.update_history_page()
 
         # Display success message
-        self.result_label.config(text="Password analyzed and added to history.")
+        self.result_label.config(text="Entry analyzed and added to history.")
 
     def update_history_page(self):
         # Clear table
@@ -151,15 +151,15 @@ class PasswordApp(tk.Tk):
             index = int(selected_item[0])
             password, strength, entropy, diversity = self.history[index]
 
-            # Display detailed information in a pop-up
+            # Display detailed information in a pop-up, im going to streamline this process soon
             popup = tk.Toplevel(self)
             popup.title("Password Details")
             popup.geometry("400x250")
 
-            ttk.Label(popup, text=f"Password: {password}", font=("Arial", 12)).pack(pady=10)
-            ttk.Label(popup, text=f"Strength: {strength}", font=("Arial", 12)).pack(pady=5)
-            ttk.Label(popup, text=f"Entropy (bits): {entropy:.2f}", font=("Arial", 12)).pack(pady=5)
-            ttk.Label(popup, text=f"Character Diversity: {diversity}", font=("Arial", 12)).pack(pady=5)
+            ttk.Label(popup, text=f"Password: {password}", font=("Avenir", 12)).pack(pady=10)
+            ttk.Label(popup, text=f"Strength: {strength}", font=("Avenir", 12)).pack(pady=5)
+            ttk.Label(popup, text=f"Entropy (bits): {entropy:.2f}", font=("Avenir",12)).pack(pady=5)
+            ttk.Label(popup, text=f"Character Diversity: {diversity}", font=("Avenir", 12)).pack(pady=5)
             ttk.Label(popup, text=f"Length: {len(password)}", font=("Arial", 12)).pack(pady=5)
 
             ttk.Button(popup, text="Close", command=popup.destroy).pack(pady=10)
